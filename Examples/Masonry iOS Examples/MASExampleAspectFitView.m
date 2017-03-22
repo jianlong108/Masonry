@@ -53,6 +53,7 @@
         [self.bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.and.bottom.equalTo(self);
             make.top.equalTo(self.topView.mas_bottom);
+            //设置这个 足以保证topview和bottomview平分整个view
             make.height.equalTo(self.topView);
         }];
         
